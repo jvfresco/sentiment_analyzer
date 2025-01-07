@@ -1,2 +1,2 @@
 from .transformers import TransformersSentimentAnalyzer
-from .interfaces import SentimentAnalyzer
+from ..domain.interfaces import SentimentAnalyzer

@@ -1,5 +1,5 @@
 from transformers import pipeline
-from .interfaces import SentimentAnalyzer
+from ..domain.interfaces import SentimentAnalyzer
 
 class TransformersSentimentAnalyzer(SentimentAnalyzer):
     def __init__(self, model_name="distilbert-base-uncased-finetuned-sst-2-english"):

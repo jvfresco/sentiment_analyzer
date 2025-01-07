@@ -1,5 +1,5 @@
-from sentiment_analysis.adapters.transformers import TransformersSentimentAnalyzer
-from sentiment_analysis.app.services import SentimentService
+from ..adapters.transformers import TransformersSentimentAnalyzer
+from ..app.services import SentimentService
 
 def get_sentiment_service():
     """

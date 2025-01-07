@@ -1,6 +1,6 @@
 from fastapi import APIRouter
-from sentiment_analysis.domain import TextInput
-from sentiment_analysis.infrastructure import get_sentiment_service
+from ..domain import TextInput
+from ..infrastructure import get_sentiment_service
 
 router = APIRouter()
 

@@ -1,4 +1,4 @@
-from sentiment_analysis.adapters.interfaces import SentimentAnalyzer
+from ..domain.interfaces import SentimentAnalyzer
 
 class SentimentService:
     def __init__(self, sentiment_analyzer: SentimentAnalyzer):
