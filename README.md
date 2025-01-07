@@ -8,6 +8,8 @@ Tech stack currently being used :
 
 -Poetry
 -Fast-API
+-PyTorch
+-Transformers (model)
 
 ## Architecture
 The design architecture and structure is based on Hexagonal Architecture. 
