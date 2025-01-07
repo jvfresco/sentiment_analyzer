@@ -23,12 +23,11 @@ sentiment-analysis/
 │   ├── __init__.py          # Makes `domain` a Python package
 │
 ├── adapters/                # Adapters Layer
-│   ├── huggingface_api.py   # Adapter for Hugging Face API
 │   ├── transformers.py      # Adapter for Transformers library
+|   ├── interfaces.py        # Abstract interfaces
 │   ├── __init__.py          # Makes `adapters` a Python package
 │
 ├── infrastructure/          # Infrastructure Layer
-│   ├── config.py            # Configuration for tool selection and API keys
 │   ├── dependency_injection.py # Instantiates and injects dependencies
 │   ├── __init__.py          # Makes `infrastructure` a Python package
 │

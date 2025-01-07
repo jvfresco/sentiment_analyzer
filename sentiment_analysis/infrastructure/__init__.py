@@ -1,0 +1,1 @@
+from .dependency_injection import get_sentiment_service
