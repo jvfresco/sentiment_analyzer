@@ -6,15 +6,16 @@ The goal of this project is to implement a small API that using AI capabilities 
 ## Stack
 Tech stack currently being used :
 
--Poetry
--Fast-API
--PyTorch
--Transformers (model)
+- Poetry
+- Fast-API
+- PyTorch
+- Transformers (model)
 
 ## Architecture
 The design architecture and structure is based on Hexagonal Architecture. 
 The main reasons are the flexibility on exchanging services without impacting or having a minimal impact on implementation and also the scalability in order to add new features.
 
+```
 sentiment-analysis/
 ├── app/                     # Application Layer
 │   ├── services.py          # Core business logic (orchestrates domain and adapters)
@@ -26,17 +27,20 @@ sentiment-analysis/
 │
 ├── adapters/                # Adapters Layer
 │   ├── transformers.py      # Adapter for Transformers library
-|   ├── interfaces.py        # Abstract interfaces
 │   ├── __init__.py          # Makes `adapters` a Python package
+|
+|── controllers/             # Controllers Layer
+|   ├── sentiment.py         # Controller for sentiment API
+|   ├── __init__.py          # Makes `controllers` a Python package
 │
 ├── infrastructure/          # Infrastructure Layer
 │   ├── dependency_injection.py # Instantiates and injects dependencies
 │   ├── __init__.py          # Makes `infrastructure` a Python package
 │
-├── main.py                  # Entry point for the application (FastAPI endpoint)
-├── requirements.txt         # Python dependencies
+├── main.py                  # Entry point for the application (FastAPI)
+├── pyporject.toml           # Python dependencies
 ├── README.md                # Project documentation
 ├── .gitignore               # Ignored files for Git
-
+```
 
 
